@@ -1,3 +1,6 @@
+import os
+print("SUPABASE_URL:", os.getenv("SUPABASE_URL"))
+print("SUPABASE_KEY:", os.getenv("SUPABASE_KEY"))
 from backend.utils.supabase import get_supabase
 from fastapi import FastAPI
 from backend.auth import router as auth_router
