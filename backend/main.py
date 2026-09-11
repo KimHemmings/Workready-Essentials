@@ -1,3 +1,4 @@
+from backend.utils.supabase import get_supabase
 from fastapi import FastAPI
 from backend.auth import router as auth_router
 from backend.jobseekers import router as jobseekers_router
